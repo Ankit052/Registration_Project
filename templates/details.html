@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <h1>User's Dashboard</h1>
+
+        <b>    ID:{{ user.pk }} <br>
+               user_type : {{user.user_type}}<br>
+               first_name : {{user.first_name}}<br>
+                last_name  :  {{user.last_name}}<br>
+                username : {{user.username}}<br>
+                email :  {{user.email}}<br>
+                address : {{user.address}}<br>
+                profile_picture : <img src="{{user.profile_picture.url}}" height="100" width="100"><br>
+            <br>
+            <br>
+    <a  href="{% url 'logout' %}">LOGOUT</a>    </b>
+</body>
+</html>
